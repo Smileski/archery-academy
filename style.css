@@ -65,12 +65,12 @@ p.padding {
   color: #ecb722;
 }
 /*grid*/
-.grid{
+.grid {
   background: #eee;
   max-width: 1628px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(6, 1ft);
+  /*grid-template-columns: repeat(6, 1 ft);*/
 }
 /*flex box inside the grid*/
 
@@ -125,7 +125,7 @@ p.padding {
   max-width: 1628px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(6, 1ft);
+  /*grid-template-columns: (repeat, 1ft);*/
 }
 .wrapper > .header {
     grid-column: span 6;

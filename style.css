@@ -1,0 +1,144 @@
+body {
+  font-family: "Arial Regular", serif;
+}
+.header{
+    background-color: #03a3df;
+    width: 1628px;
+    height: 200px;
+    /*padding-left: 25px;*/
+}
+.header > img {
+  padding-left: 25px;
+}
+h1, h2 {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.nav {
+  display: inline;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+li {
+  display: inline;
+}
+.flex-box-aside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  padding-top: 20px;
+  padding-left: 40px;
+  font-size: 17px;
+}
+footer {
+    z-index: -1;
+}
+.footer {
+  width: 1628px;
+}
+.container {
+  text-align: center;
+  color: white;
+}
+.text-footer{
+  position: absolute;
+  z-index: 2;
+  left: 250px;
+  top: 1300px;
+}
+p.padding {
+  padding-top: 5px;;
+  padding-right: 25px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 17px;
+}
+.video1 {
+  text-align: center;
+}
+.video2 {
+  text-align: center;
+}
+.orange {
+  color: #ecb722;
+}
+/*grid*/
+.grid{
+  background: #eee;
+  max-width: 1628px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1ft);
+}
+/*flex box inside the grid*/
+
+.box {
+  width: 512px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.flex-box {
+  display: flex;
+  flex-direction: row;
+  font-size: 17px;
+}
+.grid > div:nth-child(1) {
+  grid-column: span 6;
+}
+/*
+.grid > .header {
+    grid-column: span 6;
+}*/
+.grid > div:nth-child(2) {
+  grid-column: span 6;
+  height: 450px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.grid > div:nth-child(3) {
+  grid-column: span 6;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #03a3df;
+  height: 600px;
+}
+/*
+.grid > div:nth-child(4) {
+  grid-column: span 2;
+  margin-left: 15px;
+  color: #03a3df;
+}
+.grid > div:nth-child(5) {
+  grid-column: span 2;
+  margin-left: 15px;
+  color: #03a3df;
+}*/
+
+.grid > .footer {
+  grid-column: span 6;
+}
+/*wrapper is grid for index.html*/
+.wrapper {
+  background: #eee;
+  max-width: 1628px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1ft);
+}
+.wrapper > .header {
+    grid-column: span 6;
+}
+.wrapper > div:nth-child(2) {
+  background: #eee;
+  grid-column: span 4;
+  height: 1050px;
+}
+.wrapper > div:nth-child(3) {
+  background: #ddd;
+  grid-column: span 2;
+}
+.wrapper > .footer {
+  grid-column: span 6;
+}
